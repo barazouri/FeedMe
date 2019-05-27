@@ -1,4 +1,3 @@
-//const connection = require('../db') // First, establish connection and get connection instance
 const mongoose = require('mongoose');
 
 const schema = {

@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const schema = {
  gmailAccount: { type: String, index:1,require:true },
  prohibitions: String,
+ imageUrl: String,      //**** */
  userName: String,
     myFavorites: [{
         idMeal: Number,
