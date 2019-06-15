@@ -27,7 +27,7 @@ module.exports = {
          const { data: result3 } = await axios.get(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingredient3}`);
 
          if (newArr.checkHowManyParams(ingredient1, ingredient2, ingredient3, result1, result2, result3) == false) {
-            return res.status(404).json("there is no parameter. please send 2 or 3 parameter");
+            return res.json([]);
          }
          await newArr.deleteProhebition(prohebition);
          return res.json(newArr.getArr);
